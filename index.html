@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <h1># Pokedex</h1>
+        <br>
+        <ul>
+            <li><a href="#">Kanto</a></li>
+            <li><a href="#">Johto</a></li>
+            <li><a href="#">Hoenn</a></li>
+            <li><a href="#">Sinnoh</a></li>
+            <li><a href="#">Unova</a></li>
+            <li><a href="#">Kalos</a></li>
+            <li><a href="#">Alola</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1 id="titulo">POKEDEX</h1>
+        <nav>
+            <button id="menuButton">&#9776;</button>
+            <input type="text" placeholder="    Nome ou Nº" id="pesquisa">
+            <input type="button" value="🔍︎" class="pesquisa" onclick="pesquisar()">
+        </nav>
+    </header>
+
+    <main>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png" alt="Bulbasaur">
+                <p>1º<br>Bulbasaur</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/ivysaur" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/ivysaur.png" alt="Ivysaur">
+                <p>2º<br>Ivysaur</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/venusaur" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/venusaur-f.png" alt="Venusaur">
+                <p>3º<br>Venusaur</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/charmander" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/charmander.png" alt="Charmander">
+                <p>4º<br>Charmander</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/charmeleon" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/charmeleon.png" alt="Charmeleon">
+                <p>5º<br>Charmeleon</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/charizard" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/charizard.png" alt="Charizard">
+                <p>6º<br>Charizard</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/squirtle" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/squirtle.png" alt="Squirtle">
+                <p>7º<br>Squirtle</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/wartortle" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/wartortle.png" alt="Wartortle">
+                <p>8º<br>Wartortle</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/blastoise" target="_blank"><img
+                    src="https://img.pokemondb.net/sprites/black-white/normal/blastoise.png" alt="Blastoise">
+                <p>9º<br>Blastoise</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/caterpie" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/caterpie.png" alt="Caterpie">
+                <p>10º<br>Caterpie</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/metapod" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/metapod.png" alt="Metapod">
+                <p>11º<br>Metapod</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/butterfree" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/butterfree-f.png" alt="Butterfree">
+                <p>12º<br>Butterfree</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/weedle" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/weedle.png" alt="Weedle">
+                <p>13º<br>Weedle</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/kakuna" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/kakuna.png" alt="Kakuna">
+                <p>14º<br>Kakuna</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/beedrill" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/beedrill.png" alt="Beedrill">
+                <p>15º<br>Beedrill</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/pidgey" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/pidgey.png" alt="Pidgey">
+                <p>16º<br>Pidgey</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/pidgeotto" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/pidgeotto.png" alt="Pidgeotto">
+                <p>17º<br>Pidgeotto</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/pidgeot" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/pidgeot.png" alt="Pidgeot">
+                <p>17º<br>Pidgeot</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/rattata" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/rattata-f.png" alt="Rattata">
+                <p>18º<br>Rattata</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/raticate" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/raticate-f.png" alt="Raticate">
+                <p>19º<br>Raticate</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/spearow" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/spearow.png" alt="Spearow">
+                <p>20º<br>Spearow</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/fearow" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/fearow.png" alt="Fearow">
+                <p>21º<br>Fearow</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/ekans" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/ekans.png" alt="Ekans">
+                <p>22º<br>Ekans</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/arbok" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/arbok.png" alt="Arbok">
+                <p>23º<br>Arbok</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/pikachu" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/pikachu-f.png" alt="Pikachu">
+                <p>24º<br>Pikachu</p>
+            </a>
+        </div>
+        <div class="pokemon">
+            <a href="https://pokemondb.net/pokedex/raichu" target="_blank"><img src="https://img.pokemondb.net/sprites/black-white/normal/raichu-f.png" alt="Raichu">
+                <p>25º<br>Raichu</p>
+            </a>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
