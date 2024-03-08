@@ -90,8 +90,10 @@ transform: scale(1.1);
     position:absolute;
     background: linear-gradient(to bottom, #4e4e4e, #303030);
     height: 100%;
-    width: 50vh;
+    width: 20%;
+    min-width: 200px;
     display: none;
+    position: fixed;
 }
 
 #menu.ativo {
@@ -119,4 +121,8 @@ transform: scale(1.1);
     border: solid 2px black;
     height: 10vh;
     line-height: 200%;
+}
+
+#titulo {
+    font-size:4vh;
 }
