@@ -35,18 +35,19 @@ function sideBar() {
 }
 
 function pesquisar() {
+  var termoPesquisa = document.getElementById("pesquisa").value.toLowerCase();
+  var pokemons = document.getElementsByClassName("pokemon");
 
-    var termoPesquisa = document.getElementById("pesquisa").value.toLowerCase();
+  for (var i = 0; i < pokemons.length; i++) {
+      var nomePokemon = pokemons[i].querySelector("p").innerText.toLowerCase();
+      var tipoPokemon1 = pokemons[i].querySelector('aside').querySelectorAll('p')[0].innerText.toLowerCase();
+      var tipoPokemon2 = pokemons[i].querySelector('aside').querySelectorAll('p')[1].innerText.toLowerCase();
 
-    var pokemons = document.getElementsByClassName("pokemon");
-  
-
-    for (var i = 0; i < pokemons.length; i++) {
-        //Diz que o Nome do pokemon é o elemento "p" de dentro deles
-      var nomePokemon = pokemons[i].querySelector("p").innerText.toLowerCase()
-      //Operador ternário que verifica se no nomePokemon tem o valor do input, se sim o display é block, se não none.
-      var visibilidade = nomePokemon.includes(termoPesquisa) ? "block" : "none"
-
-      pokemons[i].style.display = visibilidade
-    }
+      // Verifique se o termo de pesquisa está presente no nome ou em qualquer um dos tipos do Pokémon
+      if (nomePokemon.includes(termoPesquisa) || tipoPokemon1.includes(termoPesquisa) || tipoPokemon2.includes(termoPesquisa)) {
+          pokemons[i].style.display = "block";
+      } else {
+          pokemons[i].style.display = "none";
+      }
   }
+}
